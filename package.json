@@ -1,0 +1,40 @@
+{
+  "name": "hotserver",
+  "version": "0.0.1",
+  "description": "On the fly dev server that monitors file changes - works best with angular2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint *.js lib/*.js && istanbul cover _mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appcoreopc/hotserver.git"
+  },
+  "keywords": [
+    "angular2",
+    "spa",
+    "server",
+    "development"
+  ],
+  "contributors": [
+    "jeremy <kepung@gmail.com>"
+  ],
+  "license": "MIT",
+  "bin": {
+    "lite-server": "./bin/lite-server"
+  },
+  "dependencies": {
+    "browser-sync": "^2.12.3",
+    "connect-history-api-fallback": "^1.2.0",
+    "connect-logger": "0.0.1",
+    "lodash": "^4.11.1",
+    "minimist": "1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.8.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "mockery": "^1.6.2",
+    "sinon": "^1.17.3"
+  }
+}
